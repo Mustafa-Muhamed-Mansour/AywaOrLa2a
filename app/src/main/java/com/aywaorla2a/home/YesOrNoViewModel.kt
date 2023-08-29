@@ -30,7 +30,7 @@ class YesOrNoViewModel @Inject constructor(
         fetchYesOrNo()
     }
 
-    private fun fetchYesOrNo() {
+    fun fetchYesOrNo() {
         viewModelScope.launch {
             try {
                 val yesOrno = yesOrNoRepository.fetchYesOrNo()

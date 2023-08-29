@@ -78,6 +78,7 @@ fun YesOrNo(yesOrNoViewModel: YesOrNoViewModel) {
                         LaunchedEffect(refreshing) {
                             if (refreshing) {
                                 delay(2000)
+                                yesOrNoViewModel.fetchYesOrNo()
                                 refreshing = false
                             }
                         }
@@ -86,39 +87,6 @@ fun YesOrNo(yesOrNoViewModel: YesOrNoViewModel) {
             }
         }
     }
-
-
-    // *************************************************** //
-
-//    }
-//    Box(
-//        modifier = Modifier
-//            .fillMaxWidth()
-//            .padding(5.sdp)
-//    ) {
-//        LazyColumn(
-//            modifier = Modifier.fillMaxSize()
-//        ) {
-//
-//            if (yesOrno == null) {
-//                item {
-//                    CircularProgressIndicator(
-//                        modifier = Modifier
-//                            .fillMaxSize()
-//                            .wrapContentSize(align = Alignment.Center)
-//
-//                    )
-//                }
-//                Toast.makeText(context, error, Toast.LENGTH_SHORT).show()
-//            } else {
-//                item {
-//                    FetchYesOrNo(yesOrno!!, context)
-//                }
-//            }
-//        }
-//    }
-
-
 }
 
 
@@ -153,16 +121,5 @@ fun FetchYesOrNo(yesOrno: YesOrNoResponse, context: Context) {
         )
 
         Spacer(modifier = Modifier.padding(5.sdp))
-
-//        Button(colors = ButtonDefaults.buttonColors(Color.Black),
-//            onClick = {
-//                refreshPage(context)
-//            }, content = {
-//                Text(text = "Refresh", fontSize = 17.ssp, color = Color.White)
-//            })
     }
 }
-
-//fun refreshPage(context: Context) {
-//    Toast.makeText(context, "Test", Toast.LENGTH_SHORT).show()
-//}
