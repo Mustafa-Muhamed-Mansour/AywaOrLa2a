@@ -124,16 +124,5 @@ fun FetchYesOrNo(yesOrno: YesOrNoResponse, context: Context) {
         )
 
         Spacer(modifier = Modifier.padding(5.sdp))
-
-        Button(colors = ButtonDefaults.buttonColors(Color.Black),
-            onClick = {
-                refreshPage(context)
-            }, content = {
-                Text(text = "Refresh", fontSize = 17.ssp, color = Color.White)
-            })
     }
-}
-
-fun refreshPage(context: Context) {
-    Toast.makeText(context, "Test", Toast.LENGTH_SHORT).show()
 }
