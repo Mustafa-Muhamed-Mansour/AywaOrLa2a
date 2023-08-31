@@ -127,13 +127,13 @@ fun FetchYesOrNo(yesOrno: YesOrNoResponse, context: Context) {
 
         Button(colors = ButtonDefaults.buttonColors(Color.Black),
             onClick = {
-                refreshPage(context)
+//                refreshPage(context)
             }, content = {
                 Text(text = "Refresh", fontSize = 17.ssp, color = Color.White)
             })
     }
 }
 
-fun refreshPage(context: Context) {
-    Toast.makeText(context, "Test", Toast.LENGTH_SHORT).show()
-}
+//fun refreshPage(context: Context) {
+//    Toast.makeText(context, "Test", Toast.LENGTH_SHORT).show()
+//}
