@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -87,6 +89,7 @@ fun YesOrNo(yesOrNoViewModel: YesOrNoViewModel) {
             }
         }
     }
+
 }
 
 
@@ -121,5 +124,16 @@ fun FetchYesOrNo(yesOrno: YesOrNoResponse, context: Context) {
         )
 
         Spacer(modifier = Modifier.padding(5.sdp))
+
+        Button(colors = ButtonDefaults.buttonColors(Color.Black),
+            onClick = {
+//                refreshPage(context)
+            }, content = {
+                Text(text = "Refresh", fontSize = 17.ssp, color = Color.White)
+            })
     }
 }
+
+//fun refreshPage(context: Context) {
+//    Toast.makeText(context, "Test", Toast.LENGTH_SHORT).show()
+//}
