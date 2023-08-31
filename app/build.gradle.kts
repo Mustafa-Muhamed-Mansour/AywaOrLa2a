@@ -67,7 +67,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-graphics")
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
-
     implementation ("androidx.core:core-ktx:1.10.1")
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation ("com.google.android.material:material:1.9.0")
@@ -81,7 +80,6 @@ dependencies {
     androidTestImplementation ("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.compose.material:material:1.4.0-beta01")
     implementation ("com.google.accompanist:accompanist-swiperefresh:0.24.13-rc")
-
     implementation ("androidx.activity:activity-compose:1.7.1")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:1.0.0-alpha07")
     implementation ("androidx.compose.runtime:runtime-livedata:1.0.4")
